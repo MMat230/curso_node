@@ -6,4 +6,4 @@ var rotaFormInclusaoNoticia = require('./app/routes/formulario_inclusao_noticia'
 
 app.listen(3000, function () {
     console.log("Servidor rodando com Express. ");
-}); 7410
+}); 

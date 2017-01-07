@@ -11,6 +11,16 @@
   "dependencies": {
     "ejs": "^2.5.5",
     "express": "^4.14.0",
-    "mysql": "^2.12.0"
-  }
+    "mysql": "^2.12.0",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMat230/curso_node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MMat230/curso_node/issues"
+  },
+  "homepage": "https://github.com/MMat230/curso_node#readme"
 }
