@@ -5,16 +5,18 @@ module.exports = function (app) {
         var mysql = require('mysql');
 
         var connection = mysql.createConnection({
-            host: 'localhost',
-            user: 'root',
-            password: '1234',
-            database: 'portal_noticias'
+            host     : 'localhost',
+            user     : 'matheus',
+            password : '1234',
+            database : 'portal_noticias'
         });
+        
 
         connection.query('select * from noticias', function(error, result){
-            response.send
+            response.send(result);
         });
 
-        response.render("noticias/noticias")
+
+        //response.render("noticias/noticias")
     });
 };
