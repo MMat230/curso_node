@@ -6,9 +6,9 @@ module.exports = function(application) {
     application.post('/noticias/salvar', function(request, response){
         var noticia = request.body;
         var connection = application.config.db_connection();
-        var noticiasModel = application.app.models.noticiasModel;
+        var noticiasModel = new application.app.models.NoticiaDAO(connection);
 
-        noticiasModel.salvarNoticia(noticia, connection, function(error, result){
+        noticiasModel.salvarNoticia(noticia, function(error, result){
             // a função redirect é usada para o que mesmo registro no BD não seja
             // cadastrado duas vezes caso o usuário atualize a página.
             response.redirect('/noticias');
